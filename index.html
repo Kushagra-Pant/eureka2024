@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+  <script src="script.js"></script>
+  
+</head>
+
+<body>
+  <nav>
+    <div class="svg-container"><img id = "logo" src="logo.svg" alt="Tasty Snack or Heart Attack??"></div>
+  </nav>
+  <hr>
+  <div>
+    <input id="kosher" type="checkbox">Kosher<br>
+    <input id="halal" type="checkbox">Halal<br>
+    <input id="vegetarian" type="checkbox">Vegetarian<br>
+    <input id="vegan" type="checkbox">Vegan<br>
+    <input id="gluten" type="checkbox">Gluten-free<br>
+    <input id="lactose" type="checkbox">Lactose Intolerant<br>
+    <input id="nut" type="checkbox">Nut Allergy<br>
+    
+    <button id = "start" onclick="setAllergens()">Start</button>
+  </div>
+  
+</body>
+
+</html>
