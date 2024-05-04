@@ -76,6 +76,7 @@ function handleStop() {
         document.getElementById("stopButton").style.display = "none";
         document.getElementById("restartButton").style.display = "block";
 
+
         var allergens = getAllergensFromFood(labelContainer.innerHTML);
         if (allergens == "unknown") {
                 labelContainer.innerHTML = "aaaaaaaaaa\naaaaa"
@@ -98,7 +99,7 @@ function handleStop() {
         } else {
                 labelContainer.innerHTML = "Hooray! " + labelContainer.innerHTML + " is safe to eat"
                 document.getElementsByClassName("button-container")[0].style.backgroundColor = "green";
-                //do something else to show it's safe
+
                 }
         }
 }
@@ -114,7 +115,7 @@ function getAllergensFromFood(foodName) {
                 case "Vegetarian Pizza": {return Vegetarian_Pizza;}
                 case "Oreo": {return Oreo;}
                 case "Pineapple Pizza": {return Pineapple_Pizza;}
-                case "Double Bubble": {return Double_Bubble;}
+                case "Dubble Bubble": {return Double_Bubble;}
                 return "unknown";
         }
 }
