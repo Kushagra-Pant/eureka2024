@@ -1,6 +1,9 @@
 html{
   font-family: Freeman;
   text-align: center;
+  height: 90vh;
+  margin: 5vh;
+  background: #f2f985;
 }
 
 #start{
