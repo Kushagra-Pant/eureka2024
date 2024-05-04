@@ -16,6 +16,7 @@ var isStopped = false;
 
 
 async function init() {
+        chosenAllergens = localStorage.getItem('chosenAllergens');
         const modelURL = URL + "model.json";
         const metadataURL = URL + "metadata.json";
 
@@ -135,6 +136,7 @@ function setAllergens(){
                 }
         }
         console.log(chosenAllergens)
-                                
+                                localStorage.setItem('chosenAllergens', chosenAllergens);
+
         window.location.href = 'https://afda9c95-50b7-44fb-b66a-a08604c62504-00-1rqitnbfa3lq6.picard.replit.dev/camera_page.html';
 }
