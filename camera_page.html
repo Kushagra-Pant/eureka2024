@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link href="style2.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+	
+	<script src="script.js"></script>
+</head>
+	
+<body onload="init()">
+	<div class="svg-container"><img id = "logo" src="logo.svg" alt="Tasty Snack or Heart Attack??"></div>
+	<div id="webcam-container"></div>
+	<div class="button-container">
+			<button id="stopButton" type="button">Stop</button>
+			<button id="restartButton" type="button" style="display:none;">Restart</button>
+	</div>
+
+	<p id="percentage"></p>
+
+
+</body>
+</html>
