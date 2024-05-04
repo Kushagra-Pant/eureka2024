@@ -1,0 +1,30 @@
+html{
+  font-family: Freeman;
+  text-align: center;
+  height: 90vh;
+  margin: 5vh;
+  background: lightskyblue;
+}
+
+#start{
+  padding: 10px;
+  font-family: Freeman;
+  margin: 10px;
+  font-size: 15px;
+}
+
+option{
+  font-size: 25px;
+}
+.svg-container {
+    width: 70%; /* or any other size */
+    max-width: 600px; /* maximum size */
+    min-width: 300px; /* minimum size */
+    margin: auto; /* centering if needed */
+}
+
+svg {
+    width: 100%;
+    height: auto;
+    display: block; /* removes bottom space/gap */
+}
