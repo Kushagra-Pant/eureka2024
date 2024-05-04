@@ -1,0 +1,36 @@
+html{
+  font-family: Freeman;
+  text-align: center;
+}
+
+#start{
+  padding: 10px;
+  font-family: Freeman;
+  margin: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 40px;
+    background-color: white;
+    padding: 20px; 
+    flex-grow: 1; 
+    border: 2px solid black;
+}
+
+.svg-container {
+    width: 70%; /* or any other size */
+    max-width: 300px; /* maximum size */
+    min-width: 150px; /* minimum size */
+    margin: auto; /* centering if needed */
+}
+
+svg {
+    width: 100%;
+    height: auto;
+    display: block; /* removes bottom space/gap */
+}
