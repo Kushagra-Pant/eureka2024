@@ -63,7 +63,7 @@ async function predict() {
     if (maxProbability > threshold) {
         document.getElementById("percentage").innerHTML = maxClassName;
     } else {
-        document.getElementById("percentage").innerHTML = maxClassName;
+        document.getElementById("percentage").innerHTML = "Not a food";
     }
         }
 }
@@ -92,9 +92,7 @@ function handleStop() {
         console.log(allergens);
         console.log(foundList);
         if (foundList.length > 0) {
-                labelContainer.innerHTML = "Uh oh, " + labelContainer.innerHTML + " contains:";
-                foundList.forEach(a => {labelContainer.innerHTML += "\n" + a});
-                //do something here to show that every element of foundList is something they can't eat in the product (labelContainer.innerHTML)
+                labelContainer.innerHTML = "Uh oh, " + labelContainer.innerHTML + " violates your dietary restriction(s) , "
                 labelContainer.innerHTML += "\n" + "and as such, is unsafe for you to eat."
                 document.getElementsByClassName("button-container")[0].style.backgroundColor = "red";
         } else {
@@ -123,9 +121,12 @@ function getAllergensFromFood(foodName) {
 
 
 function handleRestart() {
+    isStopped = false;
     webcam.play();
     window.requestAnimationFrame(loop);
-    document.getElementsByClassName("button-container")[0].style.backgroundColor = "green";
+    document.getElementsByClassName("button-container")[0].style.backgroundColor = "white";
+    document.getElementById("stopButton").style.display = "block";
+    document.getElementById("restartButton").style.display = "none";
 }
 
 function setAllergens(){
@@ -138,5 +139,5 @@ function setAllergens(){
         console.log(chosenAllergens)
                                 localStorage.setItem('chosenAllergens', chosenAllergens);
 
-        window.location.href = 'https://kushagra-pant.github.io/eureka2024/camera_page.html';
+        window.location.href = 'https://afda9c95-50b7-44fb-b66a-a08604c62504-00-1rqitnbfa3lq6.picard.replit.dev/camera_page.html';
 }
